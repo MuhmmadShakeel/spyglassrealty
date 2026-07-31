@@ -1,0 +1,20 @@
+.reasons-section {
+  background-color: #101828;
+  background-image: url('../../assets/images/1776098485713-dreams-new.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+
+@media (min-width: 1024px) {
+  .reasons-section {
+    background-attachment: fixed;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reasons-section {
+    background-attachment: scroll;
+  }
+}

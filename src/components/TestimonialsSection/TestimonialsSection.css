@@ -1,0 +1,108 @@
+.testimonials-carousel {
+  padding: 2px 54px 36px;
+  outline: none;
+  touch-action: pan-y;
+}
+
+.testimonials-carousel .flickity-slider {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+.testimonial-cell {
+  width: 100%;
+  min-height: 220px;
+}
+
+.testimonial-card {
+  display: flex;
+  min-height: 220px;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 24px 56px;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #dde0e5;
+  border-radius: 20px;
+  background: #fffdf9;
+  box-shadow: 0 14px 34px rgba(16, 24, 40, 0.1);
+}
+
+.testimonials-carousel .flickity-viewport {
+  overflow: hidden;
+}
+
+.testimonials-carousel .flickity-button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(16, 24, 40, 0.12);
+  background: #101828;
+  color: white;
+  box-shadow: 0 8px 20px rgba(16, 24, 40, 0.14);
+  transition: background-color 200ms ease;
+}
+
+.testimonials-carousel .flickity-button:hover {
+  background: #e03103;
+}
+
+.testimonials-carousel .flickity-button:focus {
+  box-shadow: 0 0 0 3px rgba(224, 49, 3, 0.24);
+}
+
+.testimonials-carousel .flickity-prev-next-button.previous {
+  left: 2px;
+}
+
+.testimonials-carousel .flickity-prev-next-button.next {
+  right: 2px;
+}
+
+.testimonials-carousel .flickity-page-dots {
+  bottom: 4px;
+}
+
+.testimonials-carousel .flickity-page-dot {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: #101828;
+  opacity: 0.2;
+  transition: width 200ms ease, border-radius 200ms ease, background-color 200ms ease, opacity 200ms ease;
+}
+
+.testimonials-carousel .flickity-page-dot.is-selected {
+  width: 24px;
+  border-radius: 999px;
+  background: #e03103;
+  opacity: 1;
+}
+
+@media (max-width: 639px) {
+  .testimonials-carousel {
+    padding-right: 0;
+    padding-bottom: 34px;
+    padding-left: 0;
+  }
+
+  .testimonial-cell,
+  .testimonial-card {
+    min-height: 280px;
+  }
+
+  .testimonial-card {
+    padding: 22px 20px;
+    border-radius: 18px;
+  }
+
+  .testimonials-carousel .flickity-button {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .testimonials-carousel .flickity-button,
+  .testimonials-carousel .flickity-page-dot {
+    transition: none;
+  }
+}
