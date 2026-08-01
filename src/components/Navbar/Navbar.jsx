@@ -9,80 +9,6 @@ const navigationItems = [
   { label: 'About', href: '/about-us' },
 ]
 
-function SpyglassLogo() {
-  return (
-    <svg
-      aria-hidden="true"
-      className="h-auto w-[178px] overflow-visible sm:w-[196px]"
-      viewBox="0 0 224 56"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g className="origin-[27px_27px] transition-transform duration-300 ease-out group-hover:-rotate-6">
-        <circle cx="26" cy="25" r="18.25" stroke="#F3F3F3" strokeWidth="1.5" />
-        <circle cx="26" cy="25" r="12" stroke="#E03103" strokeWidth="2.5" />
-        <path
-          d="M17.8 25.2c2.1-3.2 5-4.8 8.5-4.8 3.4 0 6.2 1.6 8.2 4.8-2 3.2-4.8 4.8-8.2 4.8-3.5 0-6.4-1.6-8.5-4.8Z"
-          stroke="#F3F3F3"
-          strokeWidth="1.5"
-          strokeLinejoin="round"
-        />
-        <circle cx="26.2" cy="25.2" r="2.7" fill="#E03103" />
-        <path
-          d="m38.8 38 9 9"
-          stroke="#E03103"
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
-        <path
-          d="M10.2 12.7A22.4 22.4 0 0 1 25.9 6"
-          stroke="#E03103"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </g>
-
-      <path d="M59 10v36" stroke="white" strokeOpacity="0.16" />
-
-      <text
-        x="70"
-        y="28"
-        fill="#F3F3F3"
-        fontFamily="Arial, Helvetica, sans-serif"
-        fontSize="18"
-        fontWeight="700"
-        letterSpacing="2.8"
-      >
-        SPYGLASS
-      </text>
-      <text
-        x="71"
-        y="42"
-        fill="#E03103"
-        fontFamily="Arial, Helvetica, sans-serif"
-        fontSize="7.5"
-        fontWeight="700"
-        letterSpacing="3.9"
-      >
-        REALTY
-      </text>
-      <circle cx="128" cy="39.5" r="1.5" fill="#F3F3F3" fillOpacity="0.65" />
-      <text
-        x="136"
-        y="42"
-        fill="#F3F3F3"
-        fillOpacity="0.72"
-        fontFamily="Arial, Helvetica, sans-serif"
-        fontSize="7.5"
-        fontWeight="600"
-        letterSpacing="1.5"
-      >
-        AUSTIN
-      </text>
-    </svg>
-  )
-}
-
 function UserIcon() {
   return (
     <svg
@@ -152,7 +78,13 @@ function Navbar() {
           className="group shrink-0 rounded-lg py-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e03103] focus-visible:ring-offset-4 focus-visible:ring-offset-[#252525]"
           aria-label="Spyglass Realty home"
         >
-          <SpyglassLogo />
+          <img
+            src="/spyglass-logo-white.svg"
+            alt="Spyglass Realty"
+            className="h-auto w-[178px] sm:w-[196px]"
+            width="160"
+            height="60"
+          />
         </a>
 
         <nav
